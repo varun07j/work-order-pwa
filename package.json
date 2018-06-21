@@ -1,0 +1,16 @@
+{
+  "name": "kinvey-angular-starter",
+  "version": "0.0.0",
+  "description": "Angular starter app for the Kinvey platform.",
+  "scripts": {
+    "start": "http-server -a localhost -p 3000 -c-1 ./www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kinvey",
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "http-server": "0.9.0"
+  }
+}

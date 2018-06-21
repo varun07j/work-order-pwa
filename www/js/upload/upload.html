@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Upload File</h3>
+        </div>
+        <div class="panel-body">
+          <form ng-submit="upload()">
+            <div class="form-group">
+              <label for="file">File input</label>
+              <input type="file" id="file">
+            </div>
+            <div class="form-group">
+              <label for="filename">File Name <small>(optional)</small></label>
+              <input type="text" class="form-control" id="filename" placeholder="File Name" ng-model="filename">
+              <span class="help-block">The file name of the file will be used if no file name is provided.</span>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="public">
+                Upload as a public image
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+            <p class="text-success" style="margin-top: 10px;" ng-show="showSuccess">File uploaded!</p>
+            <p class="text-danger" style="margin-top: 10px;" ng-show="showError">{{ error.message }}</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div id="customer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h1>Customers List</h1>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Address</th>
+              <th>Email Address</th>
+              <th>Contact Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="customer in customers track by customer._id">
+              <td>{{customer.CustomerName}}</td>
+              <td>{{customer.Address}}</td>
+              <td>{{customer.Email_Address}}</td>
+              <td>{{customer.ContactNumber}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
